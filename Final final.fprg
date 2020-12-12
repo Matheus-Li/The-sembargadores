@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Masteu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 05:47:50 "/>
+        <attribute name="created" value="TWFzdGV1O0RFU0tUT1AtU1I3TUhDVDsyMDIwLTEyLTEyOyIwNDo1MjozOSAiOzI5MTQ="/>
+        <attribute name="edited" value="TWFzdGV1O0RFU0tUT1AtU1I3TUhDVDsyMDIwLTEyLTEyOyIwNTo0Nzo1MCAiOzE7MzAyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o seu nome meu desembargador perimetral: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite o seu sobrenome agora meu antigo esp&#237;rito do mau: &quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Insira suas notas &#243; fantasma amarelo do pac-man: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns &quot; &amp; nome  &amp; &quot; &quot; &amp; sobrenome &amp;  &quot; ,a sua m&#233;dia &#233;: &quot; &amp; media &amp; &quot; ,voc&#234; passou de ano!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Desembargador &quot; &amp; nome &amp; &quot; &quot; &amp; sobrenome &amp; &quot; ,infelizmente a sua m&#233;dia de &quot; &amp; media &amp; &quot; n&#227;o foi o suficiente para passar de ano, better luck next time kiddo!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
